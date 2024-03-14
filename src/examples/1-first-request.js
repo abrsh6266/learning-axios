@@ -9,7 +9,8 @@ const FirstRequest = () => {
       const response = await axios(url);
       console.log(response);
     } catch (error) {
-      console.log(error.response);
+      console.log("error inside catch");
+      console.log(error.response.data.msg);
     }
   };
   useEffect(() => {
