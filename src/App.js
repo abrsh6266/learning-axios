@@ -1,10 +1,11 @@
 import Title from "./components/Title";
-import PostRequest from "./examples/3-post-request";
+import './axios/global.js'
+import GlobalInstance from "./examples/4-global-instance";
 function App() {
   return (
     <main>
       <Title />
-      <PostRequest />
+      <GlobalInstance />
     </main>
   );
 }
